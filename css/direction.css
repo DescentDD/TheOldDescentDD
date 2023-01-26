@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.wrap{
+    background: url(../img/1.jpg) no-repeat center;
+    width: 100%;
+    background-attachment:fixed ;
+    background-size:cover ;
+    overflow-x:hidden ;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    background-color: rgba(21, 29, 41, 0.884);
+    white-space:nowrap;
+}
+
+.logo{
+    color: aliceblue;
+    display: flex;
+    position: relative;
+    left: 50px;
+    align-items: center;
+    white-space:nowrap;
+}
+
+.banner{
+    width: 60%;
+    height: 94vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.desc,.name{
+    align-self: end;
+}
+
+.line{
+    width: 100px;
+    height: 6px;
+    background: #cee002;
+}
+
+.desc p{
+    width: 50%;
+    font-size: 30px;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+
+.content2{
+    width: 100vw;
+    height: 70vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content2 .con2pic{
+    height: 446px;
+    width: 370px;
+    position: relative;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.content2 .con2pic .newscenter img{
+    height: 245px;
+    width: 370px;
+    position: relative;    
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.content2 .con2pic .newscenter{
+    height: 245px;
+    overflow: hidden;
+}
+
+
+.content2 .con2pic .newshead{
+    position:absolute;
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.51);
+    height: 245px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    transition: all .6s ease-in-out;
+}
+
+.content2 .con2pic:hover .newshead{
+    bottom: 201px;
+    cursor: pointer;
+}
+
+.content2 .con2pic:hover .newscenter img{
+    transform: scale(1.4);
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li{
+    width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: aliceblue;
+}
+
+.nav ul li a:hover{
+    color: rgb(0, 162, 255);
+}
+
+.fa{
+    float: right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 29, 41);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: aliceblue;
+}
+.nav ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.nav ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav ul li:hover .dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.footer{
+    height: 50px;
+    background: #333;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+    line-height:50px;
+}
+
+
+
+
+
+
+
+
+
+/*下一行div*/
+
+.content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+
+.name{
+    font-size: 24px;
+    position: relative;
+}
+
+
+.con2pic h3{
+    line-height: 80px;
+    position: relative;
+    left: 14px;
+}
+
+.con2pic .posit{
+    position: relative;
+    left: 14px;
+    color: #999;
+    padding-bottom: 10px;
+}
+
+.con2pic .point{
+    color: #29B6F6;
+    position: relative;
+    padding-top: 50px;
+    cursor: pointer;
+    display: inline-block;
+    left: 14px;
+}
